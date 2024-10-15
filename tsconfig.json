@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es6",                               // Версія JavaScript, яку буде скомпільовано (ES6 або вище)
+    "module": "commonjs",                          // Використовуйте CommonJS, оскільки це модульна система Node.js
+    "rootDir": "./src",                            // Вказує на кореневу директорію з вихідними файлами TypeScript
+    "outDir": "./dist",                            // Вказує на директорію для зібраних файлів JavaScript
+    "esModuleInterop": true,                       // Дозволяє коректно імпортувати CommonJS модулі (наприклад, require)
+    "forceConsistentCasingInFileNames": true,      // Забезпечує строгий контроль за регістром імен файлів
+    "strict": true,                                // Увімкнено всі строгі перевірки TypeScript (рекомендовано)
+    "skipLibCheck": true,                          // Пропускає перевірку типів у бібліотеках для швидшої компіляції
+    "noImplicitAny": true,                         // Забороняє використання неявного типу 'any'
+    "strictNullChecks": true,                      // Вмикає строгі перевірки для значень `null` та `undefined`
+    "strictFunctionTypes": true,                   // Посилює перевірку типів функцій
+    "strictBindCallApply": true,                   // Увімкнено строгі перевірки для методів `bind`, `call`, і `apply`
+    "noImplicitThis": true,                        // Забороняє використання неявного типу `this`
+    "alwaysStrict": true,                          // Додає `use strict` у згенерований код
+    "noUnusedLocals": true,                        // Попереджає про невикористовувані локальні змінні
+    "noUnusedParameters": true,                    // Попереджає про невикористані параметри функцій
+    "noImplicitReturns": true,                     // Вимагає явного return у функціях
+    "noFallthroughCasesInSwitch": true             // Забороняє падіння з одного case у інший у switch
+  },
+  "include": ["src/**/*"],                         // Включає всі файли TypeScript в директорії src
+  "exclude": ["node_modules", "dist"]              // Винятки для файлів і директорій, які не слід компілювати
+}
